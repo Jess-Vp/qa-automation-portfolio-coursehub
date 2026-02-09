@@ -64,7 +64,7 @@ Each feature and testing layer is tracked using GitHub Issues to simulate a real
 
 ---
 
-##📌 Notes
+## 📌 Notes
 
 The focus of this repository is testing and quality assurance.
 
