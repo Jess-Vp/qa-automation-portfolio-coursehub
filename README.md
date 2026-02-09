@@ -54,6 +54,7 @@ tests-api-postman/      # API tests and Postman collections
 db/                     # Database schema, seed data, and SQL practice
 docs/                   # Test strategy and documentation
 
+```
 ---
 
 ## 🚧 Project Status
