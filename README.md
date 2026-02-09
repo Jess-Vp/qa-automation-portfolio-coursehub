@@ -54,17 +54,16 @@ tests-api-postman/      # API tests and Postman collections
 db/                     # Database schema, seed data, and SQL practice
 docs/                   # Test strategy and documentation
 
-
 ---
 
-🚧 Project Status
+## 🚧 Project Status
 
 This project is currently under active development.
 Each feature and testing layer is tracked using GitHub Issues to simulate a real project workflow.
 
 ---
 
-📌 Notes
+##📌 Notes
 
 The focus of this repository is testing and quality assurance.
 
