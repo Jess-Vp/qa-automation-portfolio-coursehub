@@ -55,6 +55,30 @@ db/                     # Database schema, seed data, and SQL practice
 docs/                   # Test strategy and documentation
 
 ```
+
+---
+## Database Layer
+
+This project includes a MySQL database layer designed for QA validation practice.
+
+- `db/schema.sql` → Table definitions
+- `db/seed.sql` → Sample dataset
+- `db/queries.sql` → Validation and analysis queries
+
+Focus areas:
+- Data integrity
+- Relationship validation
+- Duplicate detection
+- Status validation
+- Date-based filtering
+
+---
+
+### Example Query Result
+
+![Duplicate Detection](docs/screenshots/duplicates.png)
+
+
 ---
 
 ## 🚧 Project Status

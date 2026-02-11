@@ -101,3 +101,42 @@ JOIN enrollments e ON e.user_id = u.id
 JOIN courses c ON c.id = e.course_id
 WHERE c.title = 'Intro to QA'
 ORDER BY u.full_name;
+
+
+-- =============================================
+-- QA VALIDATION QUERIES
+-- =============================================
+
+-- 1) Users without enrollments (potential issue)
+SELECT u.id, u.name, u.email
+FROM users u
+LEFT JOIN enrollments e ON e.user_id = u.id
+WHERE e.user_id IS NULL;
+
+-- 2) Courses with no active enrollments
+SELECT c.id, c.title
+FROM courses c
+LEFT JOIN enrollments e 
+  ON e.course_id = c.id AND e.status = 'active'
+WHERE e.course_id IS NULL;
+
+-- 3) Count active enrollments per course
+SELECT
+  c.title,
+  COUNT(e.user_id) AS active_users
+FROM courses c
+LEFT JOIN enrollments e 
+  ON e.course_id = c.id AND e.status = 'active'
+GROUP BY c.title
+ORDER BY active_users DESC;
+
+-- 4) Enrollments created in the last 7 days
+SELECT *
+FROM enrollments
+WHERE enrolled_at >= DATE_SUB(NOW(), INTERVAL 7 DAY);
+
+-- 5) Detect duplicate emails
+SELECT email, COUNT(*) as total
+FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
