@@ -97,8 +97,8 @@ npm run api:test
 npm run api:test:report
 ```
 The report will be generated at:
-```docs/reports/api-report.html
-````
+docs/reports/api-report.html
+
 ---
 
 ## 🚧 Project Status
