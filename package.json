@@ -1,0 +1,28 @@
+{
+  "name": "qa-automation-portfolio-coursehub",
+  "version": "1.0.0",
+  "description": "This repository is part of my professional QA portfolio. It focuses on showcasing real-world testing practices across different layers of an application.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "api:test": "newman run collections/coursehub.postman_collection.json -e environments/coursehub.local.postman_environment.json",
+    "api:test:report": "mkdir -p docs/reports && newman run collections/coursehub.postman_collection.json -e environments/coursehub.local.postman_environment.json -r htmlextra --reporter-htmlextra-export docs/reports/api-report.html --reporter-htmlextra-title \"CourseHub API Test Report\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jess-Vp/qa-automation-portfolio-coursehub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jess-Vp/qa-automation-portfolio-coursehub/issues"
+  },
+  "homepage": "https://github.com/Jess-Vp/qa-automation-portfolio-coursehub#readme",
+  "devDependencies": {
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}

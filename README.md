@@ -78,6 +78,18 @@ Focus areas:
 
 ![Duplicate Detection](docs/screenshots/duplicates.png)
 
+---
+
+
+## Running API Tests
+
+This project includes automated API tests using Postman + Newman.
+
+### Run tests in CLI
+
+```bash
+npm run api:test
+```
 
 ---
 
