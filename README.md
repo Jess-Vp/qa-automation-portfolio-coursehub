@@ -91,6 +91,14 @@ This project includes automated API tests using Postman + Newman.
 npm run api:test
 ```
 
+### Generate HTML Report
+
+```bash
+npm run api:test:report
+```
+The report will be generated at:
+```docs/reports/api-report.html
+````
 ---
 
 ## 🚧 Project Status
@@ -103,7 +111,5 @@ Each feature and testing layer is tracked using GitHub Issues to simulate a real
 ## 📌 Notes
 
 The focus of this repository is testing and quality assurance.
-
 The implementation prioritizes clarity, structure, and real-world scenarios over complexity.
-
 All decisions are documented to reflect a QA-driven mindset.
